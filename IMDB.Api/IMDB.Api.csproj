@@ -11,10 +11,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\IMDB.Application\IMDB.Application.csproj" />
       <ProjectReference Include="..\IMDB.Contracts\IMDB.Contracts.csproj" />
     </ItemGroup>
