@@ -1,10 +1,19 @@
-﻿using IMDB.Application.Models;
+﻿using Dapper;
+using IMDB.Application.DataBase;
+using IMDB.Application.Models;
 
 namespace IMDB.Application.Repositories;
 
 public class MovieRepository : IMovieRepository
 {
     private readonly List<Movie> _movies = new();
+    
+    //private readonly IDbConnectionFactory _dbConnectionFactory;
+    //public MovieRepository(IDbConnectionFactory dbConnectionFactory)
+    //{
+        //_dbConnectionFactory = dbConnectionFactory;
+    //}
+
     public Task<bool> CreateAsync(Movie movie)
     {
         _movies.Add(movie);

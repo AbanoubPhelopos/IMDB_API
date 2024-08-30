@@ -1,7 +1,10 @@
 using IMDB.Application;
+using IMDB.Application.DataBase;
 using IMDB.Application.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var congig = builder.Configuration;
 
 // Add services to the container.
 
@@ -10,6 +13,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddApplication();
+builder.Services.AddDataBase(congig["Database:ConnectionStrings"]!);
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -24,5 +29,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+var dbInitializer = app.Services.GetRequiredService<DbInitializer>();
+await dbInitializer.InitializeAsync();
 
 app.Run();
