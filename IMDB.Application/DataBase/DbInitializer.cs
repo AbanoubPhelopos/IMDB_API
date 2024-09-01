@@ -28,6 +28,12 @@ public class DbInitializer
                                       on IMDB
                                       using btree(slug)
                                       """);
+        await connection.ExecuteAsync("""
+                                      CREATE TABLE IF NOT EXISTS Genres(
+                                          movieId uuid references IMDB(Id),
+                                          name text not null
+                                      )
+                                      """);
     }
     
 
