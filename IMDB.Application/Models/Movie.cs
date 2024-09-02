@@ -5,17 +5,18 @@ namespace IMDB.Application.Models;
 public partial class Movie
 {
     public required Guid Id { get; init; }
-    public required string  Title { get; set; }
-    public string Slug => GenrateSlug();
+    public required string Title { get; set; }
+    public string Slug => GenerateSlug();
     public required int YearOfRelease { get; set; }
-    public required List<string> Genres { get; init; } = new();
+    public required List<string> Genres { get; set; } = new();
 
-    private string GenrateSlug()
+    private string GenerateSlug()
     {
-        var sluggedTitle = slugRegex().Replace(Title , string.Empty)
+        var sluggedTitle = SlugRegex().Replace(Title, string.Empty)
             .ToLower().Replace(" ", "-");
         return $"{sluggedTitle}-{YearOfRelease}";
     }
-    [GeneratedRegex("[^0-9A-Za-z _-]",RegexOptions.NonBacktracking,5)]
-    private static partial Regex slugRegex();
+
+    [GeneratedRegex("[^0-9A-Za-z _-]", RegexOptions.NonBacktracking, 5)]
+    private static partial Regex SlugRegex();
 }

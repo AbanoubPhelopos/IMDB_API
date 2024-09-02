@@ -14,27 +14,27 @@ public class DbInitializer
     public async Task InitializeAsync()
     {
         using var connection = await _dbConnectionFactory.CreateConnectionAsync();
+
         await connection.ExecuteAsync("""
-                                      CREATE TABLE IF NOT EXISTS IMDB(
-                                          Id UUID PRIMARY KEY,
-                                          slug TEXT NOT NULL,
-                                          title TEXT NOT NULL,
-                                          yearofrelease INTEGER NOT NULL
-                                      )
+                                          CREATE TABLE IF NOT EXISTS Movies(
+                                              Id UUID PRIMARY KEY NOT NULL,
+                                              slug TEXT NOT NULL,
+                                              title TEXT NOT NULL,
+                                              yearofrelease INTEGER NOT NULL
+                                          )
                                       """);
 
         await connection.ExecuteAsync("""
-                                      create unique index concurrently if not exists IMDB_slug_idx
-                                      on IMDB
-                                      using btree(slug)
+                                          CREATE UNIQUE INDEX IF NOT EXISTS Movies_slug_idx
+                                          ON Movies (slug)
                                       """);
+
         await connection.ExecuteAsync("""
-                                      CREATE TABLE IF NOT EXISTS Genres(
-                                          movieId uuid references IMDB(Id),
-                                          name text not null
-                                      )
+                                          CREATE TABLE IF NOT EXISTS Genres (
+                                              movieId UUID NOT NULL REFERENCES Movies(Id),
+                                              name TEXT NOT NULL
+                                          )
                                       """);
+
     }
-    
-
 }
