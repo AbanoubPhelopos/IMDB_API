@@ -1,5 +1,4 @@
 ﻿using IMDB.Api.Mapping;
-using IMDB.Application.Repositories;
 using IMDB.Application.Services;
 using IMDB.Contracts.Requests;
 using Microsoft.AspNetCore.Mvc;

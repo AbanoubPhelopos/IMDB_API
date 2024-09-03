@@ -101,10 +101,9 @@ public class MovieRepository : IMovieRepository
                                                                         left join genres g on m.Id=g.movieId
                                                                        group by Id
                                                                        """));
-        ///TODO : the Id returned null but when debugging it has a value ???!
         return result.Select(x => new Movie
         {
-            Id = x.Id != null ? (Guid)x.Id : Guid.Empty, 
+            Id = x.id, 
             Title = x.title ?? string.Empty,         
             YearOfRelease = x.yearofrelease ?? 0,      
             Genres = x.genres as IEnumerable<string> != null 
