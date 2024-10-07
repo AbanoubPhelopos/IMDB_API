@@ -1,0 +1,12 @@
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Contracts\bin\Debug\net8.0\IMDB.Contracts.deps.json
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Contracts\bin\Debug\net8.0\IMDB.Contracts.dll
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Contracts\bin\Debug\net8.0\IMDB.Contracts.pdb
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Contracts\obj\Debug\net8.0\IMDB.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Contracts\obj\Debug\net8.0\IMDB.Contracts.AssemblyInfoInputs.cache
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Contracts\obj\Debug\net8.0\IMDB.Contracts.AssemblyInfo.cs
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Contracts\obj\Debug\net8.0\IMDB.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Contracts\obj\Debug\net8.0\IMDB.Contracts.sourcelink.json
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Contracts\obj\Debug\net8.0\IMDB.Contracts.dll
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Contracts\obj\Debug\net8.0\refint\IMDB.Contracts.dll
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Contracts\obj\Debug\net8.0\IMDB.Contracts.pdb
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Contracts\obj\Debug\net8.0\ref\IMDB.Contracts.dll

@@ -1,0 +1,13 @@
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Application\bin\Debug\net8.0\IMDB.Application.deps.json
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Application\bin\Debug\net8.0\IMDB.Application.dll
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Application\bin\Debug\net8.0\IMDB.Application.pdb
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Application\obj\Debug\net8.0\IMDB.Application.csproj.AssemblyReference.cache
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Application\obj\Debug\net8.0\IMDB.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Application\obj\Debug\net8.0\IMDB.Application.AssemblyInfoInputs.cache
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Application\obj\Debug\net8.0\IMDB.Application.AssemblyInfo.cs
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Application\obj\Debug\net8.0\IMDB.Application.csproj.CoreCompileInputs.cache
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Application\obj\Debug\net8.0\IMDB.Application.sourcelink.json
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Application\obj\Debug\net8.0\IMDB.Application.dll
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Application\obj\Debug\net8.0\refint\IMDB.Application.dll
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Application\obj\Debug\net8.0\IMDB.Application.pdb
+C:\Users\Abanoub\RiderProjects\IMDB\IMDB.Application\obj\Debug\net8.0\ref\IMDB.Application.dll
